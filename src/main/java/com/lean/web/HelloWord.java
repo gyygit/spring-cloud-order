@@ -31,7 +31,7 @@ public class HelloWord {
         ResponseModel responseModel = new ResponseModel(200, "成功", null);
         HashMap<String, Object> par = new HashMap<String, Object>();
         // 把request中的参数放到HashMap中
-        ApiUtils.setRequestPar(request,par);
+        ApiUtils.setRequestPar(request, par);
         System.out.println(par.get("id") + request.getParameter("id"));
         // 传怎什么值过来 就返回怎么值 检测服务之间通信是否畅通
         responseModel.setData(par);
@@ -43,7 +43,7 @@ public class HelloWord {
         ResponseModel responseModel = new ResponseModel(200, "成功", null);
         HashMap<String, Object> par = new HashMap<String, Object>();
         // 把request中的参数放到HashMap中
-        ApiUtils.setRequestPar(request,par);
+        ApiUtils.setRequestPar(request, par);
         // 传怎什么值过来 就返回怎么值 检测服务之间通信是否畅通
         responseModel.setData(par);
         return responseModel;
